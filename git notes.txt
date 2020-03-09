@@ -1,0 +1,14 @@
+git init: 	Turn git on for folder
+git status:	Tells
+	What branch
+	last commit message
+	What there is to commit
+	changes that need to be added and commited
+git add:	What files/folders are being added so they can be commited
+git rm: 	What files/folders are being removed so they won't be commited
+git commit -m "message": 	Committing the changes with a message saying what you are doing.
+git log:  Shows the commit history
+short hash: 1st 7 chars of the hash
+git commit -a -m <message>:  Commits and adds in 1 step
+git diff 7be53cc d553bb:  Show the diffrences between the 2 commits that the hashs represent
+
