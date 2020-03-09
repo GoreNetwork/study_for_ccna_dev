@@ -12,3 +12,24 @@ short hash: 1st 7 chars of the hash
 git commit -a -m <message>:  Commits and adds in 1 step
 git diff 7be53cc d553bb:  Show the diffrences between the 2 commits that the hashs represent
 
+
+Git Branching work
+git branch <branch name>: 				Create branch
+git checkout <branch name>:  			Move to diffrent branch
+git checkout -b <branch name>: 			Create new branch and move to it
+(From master) git merge <branch name>:  Merge branch into master
+
+Merge Conflict: Fix the issue, then re-commit and merge
+
+git stash:  store your work when you aren't ready to commit it
+git stash pop:  Removes the work from the stash, puts it in the file, and deletes the stash
+
+(Demo is for me)
+:Push to an empty repo:
+	git remote add origin git@github.com:dhimes@gmail.com/<your_repo>.git
+	git push -u origin master
+	
+Origin: an alias for the remote server
+Master: the branch we are typing into
+git push origin master:  Push the data
+git pull origin master
