@@ -1,0 +1,36 @@
+https://www.youtube.com/watch?v=7XUibDYw4mc
+
+Moves data to/from server
+API use
+supports most very protocol
+
+HTTP:
+https:\\jsonplaceholder.typicode.com
+Get:
+	curl https://jsonplaceholder.typicode.com/posts
+	Optons:
+		-i: header data shows in output
+		--head or -I: only head
+		-o or --output: puts output into file
+		-O: Download a file
+		
+POST:
+	curl --data "title=Hello&body=Hello World" https://jsonplaceholder.typicode.com/posts
+PUT:
+	curl -X PUT --data  "title=Hello" https://jsonplaceholder.typicode.com/posts/3
+		(changes the title of post #3)
+DELETE:
+	curl -X DELETE https://jsonplaceholder.typicode.com/posts/3
+
+With username/password:
+	curl -u dhimes@super_password 	https://jsonplaceholder.typicode.com/posts/3
+		(This example doesn't actally do anything)
+		
+Follow a redirect:
+	curl http://google.com
+		Returns an error that it moved to www.google.com
+	curl -L http://google.com
+		Auto goes to www.google.com
+		
+		
+I ignored the FTP stuff on the video
