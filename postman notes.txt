@@ -1,0 +1,3 @@
+Set var from auth request under "tests"
+	var data = JSON.parse(responseBody);
+	postman.setEnvironmentVariable("token", data.Token);
