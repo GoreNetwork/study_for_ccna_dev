@@ -46,4 +46,5 @@ def get_url(url):
 print(get_auth_token())
 
 response = list_network_devices()
-pprint (response)
+for item in response['response']:
+	print (item['managementIpAddress'])
